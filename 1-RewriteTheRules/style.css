@@ -1,0 +1,23 @@
+/* Rewrite the rules using the CSS custom properties.
+
+**Suggestion**:
+
+Use the `:root `selector, defining there all the properties and use them in the `body`and `.ball `selectors */
+
+:root {
+  --bgcolor: #011212;
+  --ballWH: 100px;
+  --ballColor: #ff8800;
+  --ballBorderRadius: 50px;
+}
+
+body {
+  background-color: var(--bgcolor);
+}
+
+.ball {
+  width: var(--ballWH);
+  height: var(--ballWH);
+  background-color: var(--ballColor);
+  border-radius: var(--ballBorderRadius);
+}

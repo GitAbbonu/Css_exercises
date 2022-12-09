@@ -3,23 +3,23 @@
   --bRadius: 6px;
 }
 
-#card {
+.card {
   border: var(--bCard);
   width: 300px;
   border-radius: var(--bRadius);
 }
 
-#card > img {
+.card > img {
   width: 100%;
   height: 200px;
   border-top: var(--bRadius);
 }
 
-#card > section {
+.card > section {
   border-bottom: var(--bCard);
   padding: 15px;
 }
 
-#links a:first-child {
+section > a:first-child {
   padding-right: 20px;
 }

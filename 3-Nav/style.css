@@ -1,0 +1,132 @@
+:root {
+  --navBGcolor: rgb(29, 36, 29);
+  --buttColor: rgb(28, 238, 0);
+}
+
+/* hamb-icon */
+i {
+  font-size: 30px !important;
+  position: relative;
+  top: 8px;
+  visibility: hidden;
+  float: right;
+  padding-right: 18px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  position: relative;
+  top: 7px;
+}
+
+span {
+  padding: 0px 2px;
+}
+
+ul > span {
+  font-size: 28px;
+  padding-right: 10px;
+}
+
+nav ul,
+li,
+form {
+  display: inline;
+}
+
+.disabled {
+  color: rgba(255, 255, 255, 0.582) !important;
+}
+
+nav {
+  background-color: var(--navBGcolor);
+  color: #fff;
+  font-size: 18px;
+  padding: 20px 0px;
+  height: 50px;
+}
+
+/*--------------------------- List items ------------ START */
+
+nav li {
+  padding: 17px;
+  cursor: pointer;
+  height: 100%;
+}
+
+nav li:hover,
+nav div > a:hover {
+  background-color: rgba(255, 255, 255, 0.349);
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* dropdown menu ---- Start */
+nav ul li > div {
+  display: inline;
+}
+
+.drop-content {
+  position: absolute;
+  background-color: var(--navBGcolor);
+  top: 37px;
+  left: 302px;
+  text-align: center;
+  min-width: 142px;
+  display: none;
+}
+.drop-content a {
+  display: block;
+  padding: 12px;
+}
+
+.drop:hover .drop-content {
+  display: block;
+}
+
+/* dropdown menu ---- End */
+
+/*--------------------------- List items ------------ END */
+
+/*--------------------------- Form ------------ START */
+
+nav > form {
+  float: right;
+  margin-right: 15px;
+}
+
+nav > form > button {
+  border: 1px solid var(--buttColor);
+  color: var(--buttColor);
+  background-color: var(--navBGcolor);
+}
+
+nav button:hover {
+  background-color: var(--buttColor);
+  color: #fff;
+}
+
+form > * {
+  padding: 15px 20px;
+  border-radius: 6px;
+}
+
+/*--------------------------- Form ------------ END */
+
+@media screen and (max-width: 768px) {
+  nav li,
+  nav form {
+    display: none;
+  }
+  i {
+    visibility: inherit;
+  }
+}

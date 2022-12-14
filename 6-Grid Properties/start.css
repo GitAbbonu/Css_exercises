@@ -1,0 +1,40 @@
+.grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 300px);
+  grid-template-rows: 150px 300px 150px;
+
+  grid-template-areas:
+    "c-green c-green c-green"
+    "c-yellow c-red c-blue"
+    "c-orange c-orange c-blue";
+}
+
+/* Ho tenuto gli #id perché così è impostato l'esercizio */
+/* Altrimenti avrei usato le classi */
+#green {
+  grid-area: c-green;
+}
+
+#yellow {
+  grid-area: c-yellow;
+}
+
+#orange {
+  grid-area: c-orange;
+}
+
+#red {
+  grid-area: c-red;
+}
+
+#blue {
+  grid-area: c-blue;
+}
+
+#yellow > ul,
+#red > ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr 1fr;
+}

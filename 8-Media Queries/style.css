@@ -81,15 +81,28 @@ i {
 
 /* || Section with icon and paragraph----------------Start */
 
-/*@media-tablet */
 @media screen and (max-width: 1215px) {
   main {
-    grid-template-columns: repeat(2,400px);
+    grid-template-columns: repeat(2, 400px);
   }
 }
-/* @media-phone */
+
 @media screen and (max-width: 800px) {
   main {
     grid-template-columns: 350px;
+  }
+}
+
+/* Aggiunta di @media per 768px e 375px */
+
+@media screen and (max-width: 768px) {
+  main {
+    grid-template-columns: 250px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  main {
+    grid-template-columns: 1fr;
   }
 }
